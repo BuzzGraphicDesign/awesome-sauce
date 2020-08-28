@@ -23,16 +23,16 @@ var is_landscape = ($(window).width() > 400 && $(window).width() < 767) ? true :
 */
 
 var i = 0;
-var txt = 'A MARKETING AGENCY ';
-var txt2 = 'THAT\'S MORE THAN';
-var txt3 = "AWESOME";
+var message = 'A MARKETING AGENCY ';
+var message2 = 'THAT\'S MORE THAN';
+var message3 = "AWESOME";
 var speed = 60;
 
 
 
 function typeWriter1() {			 
-	  if (i < txt.length) {
-	    document.getElementById("type-writer-text-1").innerHTML += txt.charAt(i);
+	  if (i < message.length) {
+	    document.getElementById("type-writer-text-1").innerHTML += message.charAt(i);
 	    i++;
 	    setTimeout(typeWriter1, speed);
 	  }
@@ -43,8 +43,8 @@ function typeWriter1() {
 }
 
 function typeWriter2() {		  
-  if (i < txt2.length) {
-    document.getElementById("type-writer-text-2").innerHTML += txt2.charAt(i);
+  if (i < message2.length) {
+    document.getElementById("type-writer-text-2").innerHTML += message2.charAt(i);
     i++;
     setTimeout(typeWriter2, speed);
   }
@@ -55,8 +55,8 @@ function typeWriter2() {
 }
 
 function typeWriter3() {		  
-  if (i < txt3.length) {		  
-    document.getElementById("type-writer-text-3").innerHTML += txt3.charAt(i);    
+  if (i < message3.length) {		  
+    document.getElementById("type-writer-text-3").innerHTML += message3.charAt(i);    
     i++;
     setTimeout(typeWriter3, speed);		    
   }
@@ -184,12 +184,14 @@ function scaleDown() {
 }
 
 //Anchor Buttons
-
+let ignore_observer = false;
 $('.to_services').on('click', function() {
 	autoScrollDown('services-block');
 })
+// recent change, this button have to scroll to contact form instead of Team section
 $('.to_team').on('click', function() {
-	autoScrollDown('team-block');	
+	ignore_observer = true	
+	autoScrollDown('contact-block');	
 })
 $('.to_contact').on('click', function() {
 	autoScrollDown('contact-block');
@@ -280,11 +282,17 @@ if ($(window).width() > 755) {
 	// Team Block callback
 	function teamCallbackFunc(entries, observer) {	
 
-	  	entries.forEach(entry => {
-		   
-		    if (entry.isIntersecting) {		    	
-		    	autoScrollDown('team-block');		    	
-		    }    
+	  	entries.forEach(entry => {		   
+		    
+		    // when scrolling by clicking change the final scroll destination
+		    if (entry.isIntersecting && ignore_observer) {
+		    	autoScrollDown('contact-block');
+		    	// reset ignoring
+		    	ignore_observer = false;
+		    }
+		    else if (entry.isIntersecting) {
+		    	autoScrollDown('team-block');
+		    }
 	  });
 	}
 
@@ -361,11 +369,13 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 
 	  	entries.forEach(entry => {
 		   
-		    if (entry.isIntersecting) {
-		    	
+		    if (entry.isIntersecting && ignore_observer) {
+		    	autoScrollDown('contact-block');
+		    	ignore_observer = false;
+		    }
+		    else if (entry.isIntersecting) {
 		    	autoScrollDown('team-block');
-		    		    	
-		    }    
+		    }
 	  });
 	}
 
@@ -375,9 +385,8 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 	  	entries.forEach(entry => {
 		   
 		    if (entry.isIntersecting) {
-		    	console.log('now...')
-		    	autoScrollDown('contact-block');
-		    		    	
+
+		    	autoScrollDown('contact-block');		    		    	
 		    }    
 	  });
 	}
@@ -452,11 +461,14 @@ else {
 
 	  	entries.forEach(entry => {
 		   
-		    if (entry.isIntersecting) {
-
-		    	autoScrollDown('team-block');
-
+		    if (entry.isIntersecting && ignore_observer) {
+		    	autoScrollDown('contact-block');
+		    	ignore_observer = false;
 		    }
+		    else if (entry.isIntersecting) {
+		    	autoScrollDown('team-block');
+		    }
+
 	  	});
 	}
 
@@ -500,7 +512,7 @@ function autoScrollDown(block_name) {
 // # hack to avoid double clicks for iPhones on mobile screen( window < 860px removed hover effect from images in css file)
 if ($(window).width() < 860) {
 
-	$('.team-image-title-1').on('click', function(){
+	$('.team-image-title-1').on('click', function() {
 		$('#lightbox1').css('display', 'flex')
 		$('html, body').css('overflow', 'hidden')
 	})
@@ -511,7 +523,7 @@ if ($(window).width() < 860) {
 	})
 } 
 else {
-	$('.team-hover-text-1').on('click', function(){		
+	$('.team-hover-text-1').on('click', function() {		
 		$('#lightbox1').css('display', 'flex')
 		$('html, body').css('overflow', 'hidden')
 	})

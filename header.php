@@ -192,16 +192,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			<div class="lb-body">
 				<p>
-					James brings the wow factor! Responsible for strategic design
-					direction, Mark is digitally minded, using over 20 years agency
-					experience to lead his graphic design and web development
-					teams to formulate development strategies for brand or
-					marketing campaign designs.<br><br>
-					With an in depth knowledge of branding, digital, email
-					marketing, typography and print techniques, Mark’s breadth of
-					expertise brings a unique offering to clients.<br><br>
-					Mark brings a vast amount of experience to the agency including
-					work in the automotive, engineering and travel industries.
+					A customer driven, creative thinker, James brings bold ideas! 
+					Leading the client relationship, he is a strong communicator 
+					and uses his 15+ years working in client side marketing roles 
+					to get under the skin of a businesses brand, products or services.<br><br>
+
+					The agencies brand strategist, James uses his international experience 
+					to bring practical solutions to complex scenarios and advice on businesses 
+					brand and campaign directions.<br><br>
+
+					James has experience in both B2B and B2C companies 
+					including those from the home improvement industry, 
+					online only retailers and sport markets.
 				</p>
 			</div>
 		</div>
@@ -221,9 +223,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					experience to lead his graphic design and web development
 					teams to formulate development strategies for brand or
 					marketing campaign designs.<br><br>
+
 					With an in depth knowledge of branding, digital, email
 					marketing, typography and print techniques, Mark’s breadth of
 					expertise brings a unique offering to clients.<br><br>
+
 					Mark brings a vast amount of experience to the agency including
 					work in the automotive, engineering and travel industries.
 				</p>
@@ -250,17 +254,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 					
 					<h1>JAMES KEITH</h1>
 					<p>Account Director</p>
+					<p>
+						A customer driven, creative thinker, James brings bold ideas! 
+						Leading the client relationship, he is a strong communicator 
+						and uses his 15+ years working in client side marketing roles 
+						to get under the skin of a businesses brand, products or services.<br><br>
 
-					<p>James brings the wow factor! Responsible for strategic design
-					direction, Mark is digitally minded, using over 20 years agency
-					experience to lead his graphic design and web development
-					teams to formulate development strategies for brand or
-					marketing campaign designs.<br><br>
-					With an in depth knowledge of branding, digital, email
-					marketing, typography and print techniques, Mark’s breadth of
-					expertise brings a unique offering to clients.<br><br>
-					Mark brings a vast amount of experience to the agency including
-					work in the automotive, engineering and travel industries.</p>
+						The agencies brand strategist, James uses his international experience 
+						to bring practical solutions to complex scenarios and advice on businesses 
+						brand and campaign directions.<br><br>
+
+						James has experience in both B2B and B2C companies 
+						including those from the home improvement industry, 
+						online only retailers and sport markets.
+					</p>
 				</div>
 
 				<div class="team-image-1"></div>				
@@ -281,16 +288,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<h1>MARK BOYLES</h1>
 					<p>Creative Director</p>
 
-					<p>Mark brings the wow factor! Responsible for strategic design
-					direction, Mark is digitally minded, using over 20 years agency
-					experience to lead his graphic design and web development
-					teams to formulate development strategies for brand or
-					marketing campaign designs.<br><br>
-					With an in depth knowledge of branding, digital, email
-					marketing, typography and print techniques, Mark’s breadth of
-					expertise brings a unique offering to clients.<br><br>
-					Mark brings a vast amount of experience to the agency including
-					work in the automotive, engineering and travel industries.</p>
+					<p>
+						Mark brings the wow factor! Responsible for strategic design
+						direction, Mark is digitally minded, using over 20 years agency
+						experience to lead his graphic design and web development
+						teams to formulate development strategies for brand or
+						marketing campaign designs.<br><br>
+						With an in depth knowledge of branding, digital, email
+						marketing, typography and print techniques, Mark’s breadth of
+						expertise brings a unique offering to clients.<br><br>
+						Mark brings a vast amount of experience to the agency including
+						work in the automotive, engineering and travel industries.
+					</p>
 				</div>
 				<div class="team-image-2"></div>
 			</div>
@@ -302,7 +311,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="team-text-block">
 						<h2>THE TEAM</h2>
 						<p>
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut lao-reet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,nulla facilisis at. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,nulla facilisis at.
+							Designers, strategic thinkers, copywriters, developers and more. 
+							All experienced, with tons of expertise and full of big ideas. 
+							Of course, we’re those things, we wouldn’t be a Marketing Agency if we weren't. 
+							But Awesomesauce is a team built on creatives who challenge our clients so they can WOW, 
+							so they can be more awesome than awesome. 
+							We are a team who love marketing done Awesomesauce.
 						</p>
 					</div>
 				</div>
@@ -354,14 +368,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 							Alexandra House, Church Passage<br />
 							Banbury, Oxon, OX16 5JZ<br /><br />
 							Tel: <a href="tel:01295 276998" target="_blank" style="color: white;">01295 276998</a><br />
-							Emai: <a href="mailto:enquiries@awesomesaucemarketing.co.uk" target="_blank" style="color: white;"> enquiries@awesomesaucemarketing.co.uk</a><br />
+							Emai: <a href="mailto:hello@awesomesaucemarketing.co.uk" target="_blank" style="color: white;"> hello@awesomesaucemarketing.co.uk</a><br />
 						</p>
 					</span>
 					<span style="position: relative; top: 10px;">
-						<a href="#1"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/twitter-icon.png" alt="twitter icon"></a>
-						<a href="#2"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/fb-icon.png" alt="facebook icon"></a>
-						<a href="#3"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/yt-icon.png" alt="youtube icon"></a>
-						
+						<a href="https://www.linkedin.com/company/awesomesauce-marketing-agency" target="_blank"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/ASlinkedin.png" alt="linkedin icon" style="height: 72px" /></a>
+						<a href="https://www.instagram.com/Awesomesaucemarketing" target="_blank"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/ASinsta.png" alt="instagramm icon" style="height: 72px" /></a>
+						<a href="https://www.facebook.com/Awesomesaucemarketing" target="_blank"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/fb-icon.png" alt="facebook icon"></a>
+						<a href="https://twitter.com/so_awesomesauce" target="_blank"><img src="<?php get_home_url(); ?>/wp-content/uploads/2020/08/twitter-icon.png" alt="twitter icon"></a>									
 					</span>
 				</div>
 				<div class="col-12 col-md-6">
@@ -372,11 +386,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<footer class="footer">
 			<div class="col-12">
 				<div class="row">
-					<div class="col-sm-12 col-md-2 footer-image">
+					<div class="col-sm-12 col-md-3 footer-image">
 						<div class="" style="background: url('<?php get_home_url(); ?>/wp-content/uploads/2020/08/as-logo-new.png'); background-size: cover; height: 80px; width: 160px;"></div>
 					</div>
-					<div class="col-sm-12 col-md-10 footer-text">
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam,nulla facilisis at.</p>
+					<div class="col-sm-12 col-md-6 footer-text">
+						<p>
+							Awesomesauce Marketing Ltd<br />
+							Alexandra House, Church Lane, Banbury, United Kingdom, OX16 5JZ<br />
+							Registered in England & Wales. Company number 12801827
+						</p>
 					</div>				
 				</div>
 			</div>

@@ -83,7 +83,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div>
 			<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In  -->
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.8px"
+			<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="12.8px"
 				 height="24.1px" viewBox="0 0 12.8 24.1" style="overflow:visible;enable-background:new 0 0 12.8 24.1;" xml:space="preserve">
 			<style type="text/css">
 				.st1{opacity:0;fill:white;}
@@ -94,7 +94,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</svg>
 		</div>
 		<div>
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.8px"
+			<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="12.8px"
 				 height="24.1px" viewBox="0 0 12.8 24.1" style="overflow:visible;enable-background:new 0 0 12.8 24.1;" xml:space="preserve">
 			<style type="text/css">
 				.st2{opacity:0;fill:white;}
@@ -106,7 +106,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 
 		<div>
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.8px"
+			<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" width="12.8px"
 				 height="24.1px" viewBox="0 0 12.8 24.1" style="overflow:visible;enable-background:new 0 0 12.8 24.1;" xml:space="preserve">
 			<style type="text/css">
 				.st3{opacity:0;fill:white;}
@@ -120,7 +120,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="spikes-container">
 		<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In  -->
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="1378.54px" height="69.89px" viewBox="0 0 1378.54 69.89"
 			 style="overflow:visible;enable-background:new 0 0 1378.54 69.89;" xml:space="preserve">
 		<style type="text/css">
@@ -334,7 +334,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- Spikes
 	<div class="spikes-container" style="background: white;">
 		Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In 
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		<svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="1378.54px" height="69.89px" viewBox="0 0 1378.54 69.89"
 			 style="overflow:visible;enable-background:new 0 0 1378.54 69.89;" xml:space="preserve">
 		<style type="text/css">

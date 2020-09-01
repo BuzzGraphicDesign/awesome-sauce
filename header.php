@@ -367,7 +367,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							Awesomesauce Marketing Ltd.<br />
 							Alexandra House, Church Passage<br />
 							Banbury, Oxon, OX16 5JZ<br /><br />
-							Tel: <a href="tel:01295 276998" target="_blank" style="color: white;">01295 276998</a><br />
+							Tel: <a href="tel:01295 983037" target="_blank" style="color: white;">01295 983037</a><br />
 							Emai: <a href="mailto:hello@awesomesaucemarketing.co.uk" target="_blank" style="color: white;"> hello@awesomesaucemarketing.co.uk</a><br />
 						</p>
 					</span>

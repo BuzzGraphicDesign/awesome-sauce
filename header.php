@@ -239,6 +239,30 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- The Team Section -->
 	<div class="team-section" style="background: white;" id="team-block">
+		
+		<div class="row">
+			<div class="container">
+				<div class="col-12">
+					<div class="team-text-block">
+						<h2>THE TEAM</h2>
+						<p>
+							Designers, strategic thinkers, copywriters, developers and more. 
+							All experienced, with tons of expertise and full of big ideas. 
+							Of course, we’re those things, we wouldn’t be a Marketing Agency if we weren't. 
+							But Awesomesauce is a team built on creatives who challenge our clients so they can WOW, 
+							so they can be more awesome than awesome. 
+							We are a team who love marketing done Awesomesauce.
+						</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="team-button-container">
+						<button class="as-button to_contact">GET IN TOUCH</button>
+					</div>					
+				</div>
+			</div>
+		</div>
+
 		<div class="row">
 			
 			<div class="col-6 img-container">
@@ -304,34 +328,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="team-image-2"></div>
 			</div>
 			
-		</div>
-		<div class="row">
-			<div class="container">
-				<div class="col-12">
-					<div class="team-text-block">
-						<h2>THE TEAM</h2>
-						<p>
-							Designers, strategic thinkers, copywriters, developers and more. 
-							All experienced, with tons of expertise and full of big ideas. 
-							Of course, we’re those things, we wouldn’t be a Marketing Agency if we weren't. 
-							But Awesomesauce is a team built on creatives who challenge our clients so they can WOW, 
-							so they can be more awesome than awesome. 
-							We are a team who love marketing done Awesomesauce.
-						</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="team-button-container">
-						<button class="as-button to_contact">GET IN TOUCH</button>
-					</div>					
-				</div>
-			</div>
-		</div>
+		</div>		
 	</div>
 
-	<!-- Spikes -->
+	<!-- Spikes
 	<div class="spikes-container" style="background: white;">
-		<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In  -->
+		Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In 
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="1378.54px" height="69.89px" viewBox="0 0 1378.54 69.89"
 			 style="overflow:visible;enable-background:new 0 0 1378.54 69.89;" xml:space="preserve">
@@ -352,7 +354,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			L1069.92,0l18.13,68.11L1106.17,0l18.13,68.11L1142.43,0l18.13,68.11L1178.68,0l18.13,68.11L1214.93,0l18.13,68.11L1251.18,0
 			l18.13,68.11L1287.44,0l18.13,68.11L1323.69,0l18.13,68.11L1359.94,0L1378.54,69.89z"/>
 		</svg>
-	</div>
+	</div> -->
 
 
 	<!-- Contact Form Section -->

@@ -521,17 +521,6 @@ if ($(window).width() < 860) {
 		$('#lightbox2').css('display', 'flex')
 		$('html, body').css('overflow', 'hidden')
 	})
-} 
-else {
-	$('.team-hover-text-1').on('click', function() {		
-		$('#lightbox1').css('display', 'flex')
-		$('html, body').css('overflow', 'hidden')
-	})
-
-	$('.team-hover-text-2').on('click', function() {	
-		$('#lightbox2').css('display', 'flex')
-		$('html, body').css('overflow', 'hidden')
-	})
 }
 
 $('#lightbox1').on('click', function() {
@@ -542,7 +531,6 @@ $('#lightbox2').on('click', function() {
 	$(this).css('display', 'none')
 	$('html, body').css('overflow', 'auto')
 })
-
 
 /*
 *

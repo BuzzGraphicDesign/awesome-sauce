@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 	<link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						WE'RE UNFORGETTABLE<span class="white-dots">.</span>
 					</h1>
 					<h1 class="header-title-slide-in" id="slide-in-text-3">
-						WE MAKE YOU WOW<span class="white-dots">.</span>
+						WE WOW<span class="white-dots">.</span>
 					</h1>
 
 					<!-- Slide Up Text -->
@@ -151,8 +151,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="service-1" id="service-1">
 						<h1>BRAND</h1>
 						<p>
-							Why you do what you do comes before what you do or how you do it. We get into the detail of understanding who your customers are and help you delight and inspire them.
-							Our ability to build your brand’s value proposition, the brand strategy and creative required to support it, and the tactical marketing plan to execute are the fundamentals of our marketing agency. 
+							Before anything else, we know that it’s why you do what you do that really matters. That’s where your brand’s unique wow-factor becomes clear, and that’s why we focus first on understanding you and your customers before anything else. 
+
+							We build your brand’s value proposition, craft the brand strategy and creative to support it, and implement a tactical marketing plan to help you truly stand out.
 						</p>
 					</div>
 				</div>
@@ -160,8 +161,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="service-2" id="service-2">
 						<h1>CAMPAIGN</h1>
 						<p>
-							We’re a customer focused and commercially minded agency, all about big ideas with big impact. Success hinges on using your experience and market intelligence with our breadth of expertise. We fast, flexible and ready to support your next campaign.
-							We bring the big creative, social media, PR and digital expertise to your campaigns for clients with ambitious objectives.
+							We’re customer-focused, commercially minded, and, most importantly, full of big ideas. By combining your experience and market intelligence with our broad expertise, we have everything you need to support your next campaign. 
+
+							For creative, social media, PR, digital and content expertise, contact us to help make your ambitious objectives come to life.
 						</p>
 					</div>
 				</div>
@@ -169,8 +171,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="service-3" id="service-3">
 						<h1>PARTNERSHIP</h1>
 						<p>
-							Collaboration is key. We directly impact the business being an extension of the team. Whether that be leading marketing for the business, resource to get awesome things done or expertise in niche marketing functions. 
-							Leadership, design, communication, web development and SEO are some of the marketing functions we can support with.
+							For us, it’s not just about offering a one-time solution or project – we thrive on collaboration and bringing true value to your business. Whether it’s leading all things marketing or bringing expertise of niche areas, together we have the power to achieve awesome things. 
+
+							From leadership and communication to design, web development and SEO, get in touch to find out about some of the areas we can support you in
 						</p>
 						<button class="as-button services-button to_team">FIND OUT MORE</button>
 					</div>					
@@ -189,22 +192,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="div-2">
 			<div class="lb-title">
 				<h1>JAMES KEITH</h1>
-				<p>Account Director</p>
+				<p>Account & Strategy Director</p>
 			</div>
 			<div class="lb-body">
 				<p>
-					A customer driven, creative thinker, James brings bold ideas! 
-					Leading the client relationship, he is a strong communicator 
-					and uses his 15+ years working in client side marketing roles 
-					to get under the skin of a businesses brand, products or services.<br><br>
+					James brings bold ideas and creative thinking with his customer-driven approach to every client relationship. 
+					He has more than 15 years of experience working in client-facing marketing roles, 
+					letting him really get under the skin of a business’ brand, product or service.<br /><br />
 
-					The agencies brand strategist, James uses his international experience 
-					to bring practical solutions to complex scenarios and advice on businesses 
-					brand and campaign directions.<br><br>
-
-					James has experience in both B2B and B2C companies 
-					including those from the home improvement industry, 
-					online only retailers and sport markets.
+					As the agency’s brand strategist, James uses his international experience to advise on everything 
+					from complex scenarios to brand and campaign directions. 
+					His experience includes both B2B and B2C businesses, in industries such as DIY/home improvement, 
+					ecommerce and sports markets. 
 				</p>
 			</div>
 		</div>
@@ -215,22 +214,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="div-2">
 			<div class="lb-title">
 				<h1>MARK BOYLES</h1>
-				<p>Creative Director</p>
+				<p>Art & Digital Director</p>
 			</div>
 			<div class="lb-body">
 				<p>
-					Mark brings the wow factor! Responsible for strategic design
-					direction, Mark is digitally minded, using over 20 years agency
-					experience to lead his graphic design and web development
-					teams to formulate development strategies for brand or
-					marketing campaign designs.<br><br>
+					Responsible for strategic design direction, Mark is in charge of bringing visuals 
+					that stop you in your tracks – and he delivers! 
+					Using his 20+ years of agency experience to lead his graphic design and web development teams, 
+					he spends his time formulating clever strategies for brand and marketing campaigns. <br /><br />
 
-					With an in depth knowledge of branding, digital, email
-					marketing, typography and print techniques, Mark’s breadth of
-					expertise brings a unique offering to clients.<br><br>
-
-					Mark brings a vast amount of experience to the agency including
-					work in the automotive, engineering and travel industries.
+					Mark also has a unique breadth of experience – including branding, digital, email marketing, 
+					user experience and print techniques – that helps us impress our clients from the get-go. 
+					Industries he’s worked with include automotive, engineering and travel.
 				</p>
 			</div>
 		</div>
@@ -247,12 +242,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="team-text-block">
 						<h2>THE TEAM</h2>
 						<p>
-							Designers, strategic thinkers, copywriters, developers and more. 
-							All experienced, with tons of expertise and full of big ideas. 
-							Of course, we’re those things, we wouldn’t be a Marketing Agency if we weren't. 
-							But Awesomesauce is a team built on creatives who challenge our clients so they can WOW, 
-							so they can be more awesome than awesome. 
-							We are a team who love marketing done Awesomesauce.
+							Designers, copywriters, developers and strategic thinkers – Awesomesauce is a team built on creatives. 
+							Between us all, we combine plenty of expertise, lots of big ideas and, 
+							above all else, passion for going above and beyond in every project. 
+							Find out more about us or get in touch below.
 						</p>
 					</div>
 				</div>
@@ -270,7 +263,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="team-image-title-1">
 					
 					<h1>JAMES KEITH</h1>
-					<p>Account Director</p>
+					<p>Account & Strategy Director</p>
 				
 					
 					<p class="view">view</p>
@@ -278,20 +271,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="team-hover-text-1">
 					
 					<h1>JAMES KEITH</h1>
-					<p>Account Director</p>
+					<p>Account & Strategy Director</p>
 					<p>
-						A customer driven, creative thinker, James brings bold ideas! 
-						Leading the client relationship, he is a strong communicator 
-						and uses his 15+ years working in client side marketing roles 
-						to get under the skin of a businesses brand, products or services.<br><br>
+						James brings bold ideas and creative thinking with his customer-driven approach to every client relationship. 
+						He has more than 15 years of experience working in client-facing marketing roles, 
+						letting him really get under the skin of a business’ brand, product or service.<br /><br />
 
-						The agencies brand strategist, James uses his international experience 
-						to bring practical solutions to complex scenarios and advice on businesses 
-						brand and campaign directions.<br><br>
-
-						James has experience in both B2B and B2C companies 
-						including those from the home improvement industry, 
-						online only retailers and sport markets.
+						As the agency’s brand strategist, James uses his international experience to advise on everything 
+						from complex scenarios to brand and campaign directions. 
+						His experience includes both B2B and B2C businesses, in industries such as DIY/home improvement, 
+						ecommerce and sports markets. 
 					</p>
 				</div>
 
@@ -303,7 +292,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="team-image-title-2">
 					
 					<h1>MARK BOYLES</h1>
-					<p>Creative Director</p>
+					<p>Art & Digital Director</p>
 
 					<p class="view">view</p>
 					
@@ -311,19 +300,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="team-hover-text-2">
 					
 					<h1>MARK BOYLES</h1>
-					<p>Creative Director</p>
+					<p>Art & Digital Director</p>
 
 					<p>
-						Mark brings the wow factor! Responsible for strategic design
-						direction, Mark is digitally minded, using over 20 years agency
-						experience to lead his graphic design and web development
-						teams to formulate development strategies for brand or
-						marketing campaign designs.<br><br>
-						With an in depth knowledge of branding, digital, email
-						marketing, typography and print techniques, Mark’s breadth of
-						expertise brings a unique offering to clients.<br><br>
-						Mark brings a vast amount of experience to the agency including
-						work in the automotive, engineering and travel industries.
+					Responsible for strategic design direction, Mark is in charge of bringing visuals 
+					that stop you in your tracks – and he delivers! 
+					Using his 20+ years of agency experience to lead his graphic design and web development teams, 
+					he spends his time formulating clever strategies for brand and marketing campaigns. <br /><br />
+
+					Mark also has a unique breadth of experience – including branding, digital, email marketing, 
+					user experience and print techniques – that helps us impress our clients from the get-go. 
+					Industries he’s worked with include automotive, engineering and travel.
 					</p>
 				</div>
 				<div class="team-image-2"></div>

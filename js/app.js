@@ -11,7 +11,7 @@ window.onresize = function() {
 
 
 var is_mobile = $(window).width() < 400 ? true : false;
-var is_landscape = ($(window).width() > 400 && $(window).width() < 767) ? true : false;
+var is_landscape = ($(window).width() > 400 && $(window).width() < 860) ? true : false;
 
 
 
@@ -206,13 +206,13 @@ $('.to_contact').on('click', function() {
 *
 */
 
-if ($(window).width() > 755) {
+if ($(window).width() > 860) {
 	
 
 	let options_block = {
 	    root: null,
 	    rootMargin: '0px',
-	    threshold: 0.3
+	    threshold: 0.2
 	};
 	let options_services = {
 	    root: null,
@@ -239,16 +239,13 @@ if ($(window).width() > 755) {
 		observer_contact.observe(document.getElementById('contact-block'));
 
 
-
 	// Services Block callback
 	function servicesBlockCallbackFunc(entries, observer) {	
 
 	  	entries.forEach(entry => {
 		   
 		    if (entry.isIntersecting) {
-		    	
-		    	autoScrollDown('services-block');
-		    		    	
+		    	stopScroll('services-block')		    	
 		    }    
 	  });
 	}
@@ -285,13 +282,13 @@ if ($(window).width() > 755) {
 	  	entries.forEach(entry => {		   
 		    
 		    // when scrolling by clicking change the final scroll destination
-		    if (entry.isIntersecting && ignore_observer) {
-		    	autoScrollDown('contact-block');
+		    if (entry.isIntersecting && ignore_observer) {		    	
+		    	stopScroll('contact-block')
 		    	// reset ignoring
 		    	ignore_observer = false;
 		    }
 		    else if (entry.isIntersecting) {
-		    	autoScrollDown('team-block');
+		    	stopScroll('team-block')		    	
 		    }
 	  });
 	}
@@ -302,10 +299,11 @@ if ($(window).width() > 755) {
 	  	entries.forEach(entry => {
 		   
 		    if (entry.isIntersecting) {		    	
-		    	autoScrollDown('contact-block');		    	
+		    	stopScroll('contact-block');		    	
 		    }    
 	  });
-	}	
+	}
+
 }
 // Landscape Mode
 else if($(window).width() > 400 && $(window).width() < 860) {
@@ -345,16 +343,16 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 		    	$('#'+entry.target.id).css('opacity', '1')
 		    	
 		    	if (entry.target.id === 'service-1') {		    		
-		    		$('#'+entry.target.id).animate({left: 0}, 1000);
-		    		autoScrollDownServices('service-1');
+		    		$('#'+entry.target.id).animate({left: 0}, 1000);		    		
+		    		stopScroll('service-1');
 		    		
 		    	}
 		    	if (entry.target.id === 'service-2') {
-		    		autoScrollDownServices('service-2');		    		
+		    		stopScroll('service-2');		    		
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);
 		    	}
 		    	if (entry.target.id === 'service-3') {		    		
-		    		autoScrollDownServices('service-3');
+		    		stopScroll('service-3');
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);
 		    		// animate the button
 		    		$('.services-button-container > button').animate({opacity: 1}, 2000);
@@ -370,11 +368,11 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 	  	entries.forEach(entry => {
 		   
 		    if (entry.isIntersecting && ignore_observer) {
-		    	autoScrollDown('contact-block');
+		    	stopScroll('contact-block');
 		    	ignore_observer = false;
 		    }
 		    else if (entry.isIntersecting) {
-		    	autoScrollDown('team-block');
+		    	stopScroll('team-block');
 		    }
 	  });
 	}
@@ -385,8 +383,7 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 	  	entries.forEach(entry => {
 		   
 		    if (entry.isIntersecting) {
-
-		    	autoScrollDown('contact-block');		    		    	
+		    	stopScroll('contact-block');		    		    	
 		    }    
 	  });
 	}
@@ -399,13 +396,14 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 		$('html, body').animate({scrollTop}, 'slow');
 
 	}
+	
 }
 // Mobile res
 else {
 	let options_block = {
 	    root: null,
 	    rootMargin: '0px',
-	    threshold: 0.3
+	    threshold: 0.2
 	};
 	let options_services = {
 	    root: null,
@@ -443,12 +441,14 @@ else {
 		    		
 		    	}
 		    	if (entry.target.id === 'service-2') {
-		    		autoScrollDownServices('service-2');		    		
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);
+		    		autoScrollDownServices('service-2');		    		
+		    		
 		    	}
 		    	if (entry.target.id === 'service-3') {		    		
-		    		autoScrollDownServices('service-3');
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);
+		    		autoScrollDownServices('service-3');
+		    		
 		    		// animate the button
 		    		$('.services-button-container > button').animate({opacity: 1}, 2000);
 		    	}
@@ -477,10 +477,8 @@ else {
 
 	  	entries.forEach(entry => {
 		   
-		    if (entry.isIntersecting) {
-		    	
-		    	autoScrollDown('contact-block');
-		    		    	
+		    if (entry.isIntersecting) {		    	
+		    	autoScrollDown('contact-block');		    		    	
 		    }
 	  	});
 	}
@@ -492,6 +490,18 @@ else {
 
 		$('html, body').animate({scrollTop}, 'slow');
 	}
+	
+}
+
+function stopScroll(e) {
+
+	$("html,body").css('overflow', 'hidden');
+	setTimeout(function() {
+
+		$("html,body").css('overflow', 'auto');		
+		autoScrollDown(e);
+
+	},450)
 }
 
 function autoScrollDown(block_name) {
@@ -499,7 +509,8 @@ function autoScrollDown(block_name) {
 	let this_height = $('#'+block_name).position().top;
 	let scrollTop = this_height;	
 
-	$('html, body').animate({scrollTop}, 'slow');
+	$('html, body').animate({scrollTop}, 'slow');	
+	
 }
 
 

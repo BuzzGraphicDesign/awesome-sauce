@@ -46,8 +46,6 @@ button {
 	@media screen and (max-width: $mobile) {
 		font-size: 1rem;
 	}
-
-
 }
 
 .header-arrow-container {
@@ -522,7 +520,7 @@ div.gform_wrapper {
 
 .spikes-container {
 	position: relative;
-	z-index: 1;
+	z-index: -1;
 	height: auto;
 	
 	> svg {
@@ -778,6 +776,7 @@ div.gform_wrapper {
 		}
 
 		.container {
+			padding-bottom: 40px;
 			.col-12 {
 				.team-text-block {
 					padding: 80px 40px 20px;
@@ -906,6 +905,7 @@ div.gform_wrapper {
 	padding: 40px 0;
 	position: relative;
 	z-index: 1;	
+	height: 100vh;
 	.container {
 		h3 {
 			color: #3feee7;
@@ -925,6 +925,7 @@ div.gform_wrapper {
 	
 	.contact-section {
 		padding: 20px 0;
+		height: auto;
 		.container {
 			h3 {
 				font-size: 7rem;
@@ -936,6 +937,7 @@ div.gform_wrapper {
 @media screen and (max-width: $mobile) {
 	.contact-section {
 		padding: 40px 0;
+		height: auto;
 		.container {
 			h3 {
 				line-height: .8;
@@ -952,26 +954,34 @@ div.gform_wrapper {
 }
 
 .footer {
-	background: #06AFAF;	
-	.footer-image {
+	background: #06AFAF;
+	position: absolute;
+	bottom: 20px;
 
-	}
+	.row {
+		width: 100vw;
+	
+		.footer-image {
 
-	.footer-text {		
-		padding: 10px 0;
-		
-		p {
-			color: #fff;
+		}
+
+		.footer-text {		
+			padding: 10px 0;
 			
+			p {
+				color: #fff;
+				
+			}
 		}
 	}
 }
 
-@media screen and (max-width: $mobile) {
+@media (min-width: $mobile) and (max-width: $landscape) {
 
 	.footer {
-		
-		padding: 0;
+		position: relative;
+		bottom: 0;
+		padding: 10px;
 
 		.footer-image {
 			> div {
@@ -984,7 +994,32 @@ div.gform_wrapper {
 		}
 
 		.footer-text {			
-			padding: 0 20px;
+			padding: 20px;
+
+		}
+	}
+
+}
+
+@media screen and (max-width: $mobile) {
+
+	.footer {
+		position: relative;
+		bottom: 0;
+		padding: 10px;
+
+		.footer-image {
+			> div {
+				margin-bottom: 40px;
+				background-repeat: no-repeat!important;
+				background-size: contain!important;
+				height: 92px!important;
+				width: auto!important;
+			}
+		}
+
+		.footer-text {			
+			padding: 20px;
 
 		}
 	}

@@ -9,11 +9,8 @@ window.onresize = function() {
 	
 }
 
-
 var is_mobile = $(window).width() < 400 ? true : false;
 var is_landscape = ($(window).width() > 400 && $(window).width() < 860) ? true : false;
-
-
 
 
 /**
@@ -27,7 +24,6 @@ var message = 'A MARKETING AGENCY ';
 var message2 = 'THAT\'S MORE THAN';
 var message3 = "AWESOME";
 var speed = 60;
-
 
 
 function typeWriter1() {			 
@@ -64,14 +60,17 @@ function typeWriter3() {
   	// add an outstanding dot to text
   	document.getElementById("type-writer-text-3").innerHTML += '<span id="dot">.</span>';
   	$('#dot').css('position', 'absolute')
-	  i = 0;	 
+	i = 0;	 
 	  
 	  setTimeout(function() {
 	  	// hide first message
-	  	$('#type-writer-text-1,#type-writer-text-2,#type-writer-text-3').hide()
+	  	$('#type-writer-text-1,#type-writer-text-2,#type-writer-text-3').fadeOut().addClass('blur-effect')
 	  	
-	  	// Start Slide in effect Now!!!
-	  	slideInNow();
+	  	// Delay Slide in effect because the fade out time
+	  	setTimeout(function() {
+			slideInNow()
+	  	}, 500)
+	  	
 	  	  	
 	  }, 2000);
 	  
@@ -80,7 +79,6 @@ function typeWriter3() {
 
 // **** Start first animation
 typeWriter1();
-
 
 /**
 *
@@ -100,15 +98,16 @@ function slideInNow() {
 		now($('#slide-in-text-3'));
 	}, 3200)
 	
-	setTimeout(function() {		
-		$('#slide-in-text-1,#slide-in-text-2,#slide-in-text-3').hide()
-		$('#slide-up-text-1, #slide-up-text-2').css('display', 'block'); 		
-		
-		// Start slide in from bottom animation		
-		slideFromBotton();
+	setTimeout(function() {
 
-	}, 5500)
-	
+		$('#slide-in-text-1,#slide-in-text-2,#slide-in-text-3').fadeOut().addClass('blur-effect')
+		
+		setTimeout(function() {
+			$('#slide-up-text-1, #slide-up-text-2').css('display', 'block');
+			// Start slide in from bottom animation
+			slideFromBotton();
+		}, 500)
+	}, 5500)	
 }
 
 function now(e) {
@@ -131,14 +130,12 @@ function slideFromBotton() {
 		up($('#slide-up-text-2'));
 	}, 1200)
 	setTimeout(function() {
-		$('#slide-up-text-1, #slide-up-text-2').hide()
+		$('#slide-up-text-1, #slide-up-text-2').fadeOut().addClass('blur-effect')
 	}, 4000)
 
-	setTimeout(function() {
-		
+	setTimeout(function() {		
 		// Start scaling down effect`
-		scaleDown();
-	
+		scaleDown();	
 	}, 5000)
 	
 }
@@ -155,7 +152,7 @@ function up(e) {
 **/
 function scaleDown() {
 	
-	let font_size = is_mobile == true ? '48px' : (is_landscape === true) ? '57px' : '130px';
+	let font_size = is_mobile == true ? '48px' : (is_landscape === true) ? '57px' : $(window).width() >= 768 && $(window).width() < 992 ? '117px' : '130px';
 	
 	if (is_mobile) {
 		$('#scale-down-text').css({'display': 'block', 'text-align': 'left','padding-bottom': '40px', 'margin-top': '40px'})
@@ -169,7 +166,6 @@ function scaleDown() {
 	
 	$('.button-header-container').css('display', 'block')
 	$('#scale-down-text').animate({fontSize: font_size, width: '100%', opacity: 1 }, 700);
-	
 
 	setTimeout(function() {
 		$('.flashing-dot').css('visibility', 'visible');
@@ -197,7 +193,6 @@ $('.to_contact').on('click', function() {
 	autoScrollDown('contact-block');
 })
 		
-
 
 /**
 *
@@ -307,7 +302,7 @@ if ($(window).width() > 860) {
 }
 // Landscape Mode
 else if($(window).width() > 400 && $(window).width() < 860) {
-	
+
 	let options_block = {
 	    root: null,
 	    rootMargin: '0px',
@@ -343,16 +338,15 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 		    	$('#'+entry.target.id).css('opacity', '1')
 		    	
 		    	if (entry.target.id === 'service-1') {		    		
+		    		autoScrollDownServices('service-1');
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);		    		
-		    		stopScroll('service-1');
-		    		
 		    	}
 		    	if (entry.target.id === 'service-2') {
-		    		stopScroll('service-2');		    		
+		    		autoScrollDownServices('service-2');		    		
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);
 		    	}
 		    	if (entry.target.id === 'service-3') {		    		
-		    		stopScroll('service-3');
+		    		autoScrollDownServices('service-3');
 		    		$('#'+entry.target.id).animate({left: 0}, 1000);
 		    		// animate the button
 		    		$('.services-button-container > button').animate({opacity: 1}, 2000);
@@ -366,7 +360,7 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 	function teamCallbackFunc(entries, observer) {	
 
 	  	entries.forEach(entry => {
-		   
+		 
 		    if (entry.isIntersecting && ignore_observer) {
 		    	stopScroll('contact-block');
 		    	ignore_observer = false;
@@ -381,8 +375,8 @@ else if($(window).width() > 400 && $(window).width() < 860) {
 	function contactCallbackFunc(entries, observer) {	
 
 	  	entries.forEach(entry => {
-		   
-		    if (entry.isIntersecting) {
+		  	
+		    if (entry.isIntersecting) {		    	 
 		    	stopScroll('contact-block');		    		    	
 		    }    
 	  });

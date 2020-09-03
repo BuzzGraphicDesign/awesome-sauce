@@ -1,28 +1,17 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 body {
-	background: url('https://awesomesaucemarketing.co.uk/wp-content/uploads/2020/08/test-bg.png');
-	background-color: #222629;	
-	background-position: 50% 50%;
-	background-size: 110%;
-	background-blend-mode: difference;
+	background: url('https://awesomesaucemarketing.co.uk/wp-content/uploads/2020/09/newstrip.png');
+	background-size: 110%;	
 	background-repeat: repeat;	
 	font-family: mono45-headline;
 	padding: 0;
 	margin: 0;
 	position: relative;
 
-	animation: moving-bg .7s infinite;
+	animation: moving-bg .7s infinite;	
 
-	@media (min-width: $mobile) and (max-width: $landscape) {
-		background-size: auto;
-		background-position:top;
-		animation: none;
-	}
-
-	@media screen and (max-width: $mobile) {
-		background-size: auto;
-		background-position: top;
-		animation: none;
+	@media screen and (max-width: $landscape) {
+		background-size: 250%;	
 	}
 
 }
@@ -33,7 +22,7 @@ button {
 	border: none;
 }
 .as-button {
-	background: #FC4444;
+	background: $red;
 	border: none;
 	color: white;
 	padding: 5px;
@@ -41,7 +30,6 @@ button {
 	padding-left: 11px;	
 	font-size: 1.3rem;
 	clip-path: polygon(100% 0, 90% 100%, 0 100%, 0 0);
-
 	
 	@media screen and (max-width: $mobile) {
 		font-size: 1rem;
@@ -124,6 +112,10 @@ button {
 
 
 // Header Animation
+.blur-effect {
+	filter: blur(5px);
+	transition: filter .6s;
+}
 .white-dots {
 	margin-left: -12px;
 	font-size: 90%;
@@ -271,7 +263,7 @@ button {
 		max-width: 100%;
 	}
 }
-
+// GForm
 div.gform_wrapper {	
 	margin-top: 0;
 
@@ -280,8 +272,8 @@ div.gform_wrapper {
 		.validation_error {
 			color: white;
 			font-weight: normal;
-			border-top: 2px solid #fff;
-			border-bottom: 2px solid #fff;
+			border-top: none;
+			border-bottom: none;
 		}
 
 		::placeholder {
@@ -291,7 +283,11 @@ div.gform_wrapper {
 		.gform_body {
 			
 			.gform_fields {
-
+				
+				li.gfield_error {
+					background: none;
+					border: none;
+				}
 				li.gfield {					
 					padding: 0;
 					margin-top: 0;
@@ -478,6 +474,14 @@ div.gform_wrapper {
 			width: 300%;
 			display: none;
 
+			@media (min-width: $landscape) and (max-width: 1199px) {
+				padding-left: 0!important;
+			}			
+			
+			@media (min-width: $mobile) and (max-width: $landscape) {
+				padding-left: 60px;				
+			}
+
 			.flashing-dot {
 
 				font-size: 105px;
@@ -493,14 +497,41 @@ div.gform_wrapper {
 		}		
 
 		.button-header-container {			
+			
 			text-align: center;
+			
 			display: none;
-			//margin-top: 80px;
+
+			@media screen and (min-width: 992px) {
+				margin-left: 43%;
+				text-align: left;
+				//border: 2px solid red;
+				padding: 0;
+			}
+			@media (min-width: 768px) and (max-width: 991px) {
+				min-width: 50%!important;
+				text-align: left;
+				padding: 0;
+				margin-left: 39%;
+			}
+
 			.as-button--header {
 				opacity: 0;				
 				transition: opacity 1.5s;
-				margin-left: 25px;
+				//margin-left: 25px;
+				padding-right: 25px;
+				transition: padding-right 1s;
 				
+				@media screen and (min-width: 992px) {
+					&:hover {
+						background: white;
+						color: $red;
+						padding-right: 20%;					
+						transition: background .7s;
+						transition: color .7s;					
+						transition: padding-right .8s;
+					}
+				}
 			}
 		}		
 	}
@@ -568,15 +599,42 @@ div.gform_wrapper {
 				display: none;
 			}
 		}
+		
+		.services-button-container-outer {
 
-		.services-button-container {				
-			text-align: center;
-			height: auto;
-			padding: 20px;
-			button {
-				background: white;
-				color: #FC4444;
-				opacity: 0;				
+			@media (min-width: 768px) and (max-width: 991px) {
+				min-width: 100%;
+			}
+
+			@media screen and (min-width: 992px) {
+				margin-left: 43%;
+				text-align: left;				
+				padding: 0;
+			}
+		
+			.services-button-container {				
+				@media screen and (max-width: 991px) {
+					text-align: center;
+					height: auto;
+					padding: 20px;				
+				}
+				button {
+					background: white;
+					color: $red;
+					opacity: 0;	
+
+					transition: opacity 1.5s;
+					//margin-left: 25px;
+					padding-right: 25px;
+					transition: padding-right 1s;
+					
+					@media screen and (min-width: 992px) {
+						&:hover {						
+							padding-right: 20%;								
+							transition: padding-right .8s;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -682,6 +740,10 @@ div.gform_wrapper {
 					line-height: 0.2;					
 				}
 
+				> p {
+					text-align: center;
+				}
+
 				.view {
 					display: none;
 				}				
@@ -780,12 +842,35 @@ div.gform_wrapper {
 			.col-12 {
 				.team-text-block {
 					padding: 80px 40px 20px;
-					text-align: center;					
-
-				}
-				.team-button-container {
-					padding-bottom: 60px;
 					text-align: center;
+				}				
+			}
+			.team-button-container-outer {
+				text-align: center;
+
+				@media (min-width: 768px) and (max-width: 991px) {
+					min-width: 100%;
+				}
+
+				@media screen and (min-width: 992px) {
+					margin-left: 44.2%;
+					text-align: left;				
+					padding: 0;
+				}
+
+				.team-button-container {
+					padding-bottom: 60px;					
+					.to_contact {
+						padding-right: 25px;
+						transition: padding-right 1s;
+						@media screen and (min-width: 992px) {
+							&:hover {						
+								padding-right: 20%;								
+								transition: padding-right .8s;
+							}
+						}
+					}
+					
 				}
 			}
 		}

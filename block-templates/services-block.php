@@ -26,7 +26,7 @@
 				<p>
 					For us, it’s not just about offering a one-time solution or project – we thrive on collaboration and bringing true value to your business. Whether it’s leading all things marketing or bringing expertise of niche areas, together we have the power to achieve awesome things. 
 
-					From leadership and communication to design, web development and SEO, get in touch to find out about some of the areas we can support you in
+					From leadership and communication to design, web development and SEO, get in touch to find out about some of the areas we can support you in.
 				</p>
 				<button class="as-button services-button to_team">FIND OUT MORE</button>
 			</div>					

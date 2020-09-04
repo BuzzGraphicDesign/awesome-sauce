@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						WE'RE UNFORGETTABLE<span class="white-dots">.</span>
 					</h1>
 					<h1 class="header-title-slide-in" id="slide-in-text-3">
-						WE WOW<span class="white-dots">.</span>
+						<div class="letter-w" style="display: inline-block;">WE WOW<span class="white-dots">.</span></div>
 					</h1>
 
 					<!-- Slide Up Text -->

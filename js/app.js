@@ -79,7 +79,7 @@ function typeWriter3() {
 
 // **** Start first animation
 typeWriter1();
-
+//scaleDown()
 /**
 *
 * Slide in Effect
@@ -89,13 +89,12 @@ function slideInNow() {
 
 	// first slide start
 	now($('#slide-in-text-1'));
-
 	// delay each slide
 	setTimeout(function() {
 		now($('#slide-in-text-2'));
 	}, 1600)
 	setTimeout(function() {
-		now($('#slide-in-text-3'));
+		now($('#slide-in-text-3'));		
 	}, 3200)
 	
 	setTimeout(function() {
@@ -106,13 +105,22 @@ function slideInNow() {
 			$('#slide-up-text-1, #slide-up-text-2').css('display', 'block');
 			// Start slide in from bottom animation
 			slideFromBotton();
+			
 		}, 500)
 	}, 5500)	
 }
 
 function now(e) {
 	e.css('display', 'block')
-	e.animate({left: 0, right: 0, opacity: 1}, 1000);	
+	e.animate({left: 0, right: 0, opacity: 1}, 1000, redW(e));	
+}
+function redW(e) {
+
+	if (e.selector === '#slide-in-text-3') {
+		setTimeout(function() {
+			$('.letter-w').css({color: '#FC4444', transition: 'color .5s'})
+		},1400)
+	}	
 }
 
 
@@ -164,7 +172,7 @@ function scaleDown() {
 		$('#scale-down-text').css({'display': 'block', 'text-align': 'left', 'padding-left': '120px', 'margin-top': '80px'})
 	}
 	
-	$('.button-header-container').css('display', 'block')
+	//$('.button-header-container').css('display', 'block')
 	$('#scale-down-text').animate({fontSize: font_size, width: '100%', opacity: 1 }, 700);
 
 	setTimeout(function() {
@@ -172,9 +180,9 @@ function scaleDown() {
 		$('.flashing-dot').addClass('flashing-dot-animation');
 		setTimeout(function() {
 			$('.header-arrow-container').css('opacity', '1')
-			$('.as-button--header').css('opacity', '1')
+			$('.as-button--header').css({'opacity': '1', transition: 'opacity 1.5s'})
 			
-		}, 1800)
+		}, 2000)
 		
 	}, 1000)
 }

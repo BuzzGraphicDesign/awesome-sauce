@@ -47,6 +47,9 @@ button {
 	@media screen and (max-width: $landscape) {
 		bottom: 80px;			
 	}
+	@media screen and (max-width: $mobile) {
+		left: 47%;
+	}
 
 	div:not(:last-child) {
 		margin-bottom: 5px;
@@ -125,7 +128,6 @@ button {
 		margin-left: -2px;					
 	}
 }
-
 .flashing-dot {	
 	bottom: 0;
 	visibility: hidden;
@@ -160,13 +162,10 @@ button {
 		font-size: 40px;
 	}
 }
-
-
 .flashing-dot-animation {
-	animation: flashing-dot .7s;
+	animation: flashing-dot .5s;
 	animation-iteration-count: 3;
 }
-
 
 @keyframes flashing-dot {
 	0% {
@@ -497,10 +496,7 @@ div.gform_wrapper {
 		}		
 
 		.button-header-container {			
-			
-			text-align: center;
-			
-			display: none;
+			text-align: center;			
 
 			@media screen and (min-width: 992px) {
 				margin-left: 43%;
@@ -517,7 +513,7 @@ div.gform_wrapper {
 
 			.as-button--header {
 				opacity: 0;				
-				transition: opacity 1.5s;
+				transition: opacity 1s;
 				//margin-left: 25px;
 				padding-right: 25px;
 				transition: padding-right 1s;
@@ -676,6 +672,7 @@ div.gform_wrapper {
 				flex-direction: column;
 				position: relative;
 				left: -100px;
+				padding: 0 10px;
 			}
 
 			.service-2 {
